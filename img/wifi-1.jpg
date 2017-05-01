@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="en" xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+<meta charset="utf-8">
+<title>Fake iPhone iOS7 Text Messages | iOS7text.com</title>
+<meta name="description" content="Create your own Fake iOS7 iPhone Text Message. Most advanced iPhone Text generator online. Upload images to the iphone text conversation. Easy to prank friends" />
+<meta property="og:title" content="Create Fake iOS7 iPhone Text Messages" /> 
+<meta property="og:description" content="Create your own Fake iOS7 iPhone Text Message. Most advanced iPhone Text generator online. Upload images to the iphone text conversation. Easy to prank friends! Try it online now!" /> 
+<meta property="og:image" content="http://www.ios7text.com/assets/img/facebook200x200.jpg" /> 
+<meta property="og:type" content="website" /> 
+<meta property="og:site_name" content="iOS7Text.com"/> 
+<meta property="og:url" content="http://www.ios7text.com"/>
+<meta property="fb:app_id" content="634495203286584" />
+
+<link href="http://www.ios7text.com/assets/img/favicon.png" rel="icon" />
+
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="assets/css/elusive-webfont.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="assets/css/ui-lightness/jquery-ui-1.10.4.custom.min.css" />
+<link rel="stylesheet" type="text/css" href="assets/css/app.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen" />
+
+<script type="text/javascript" src="assets/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui-1.10.4.custom.min.js"></script>
+<script type="text/javascript" src="assets/js/html2canvas.js"></script>
+<script type="text/javascript" src="assets/js/jquery.plugin.html2canvas.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.hcsticky-min.js"></script>
+<script type="text/javascript" src="assets/js/global.min.js"></script>
+</head>
+
+<body>
+
+
+<script>
+
+window.google_analytics_uacct = "UA-22116603-15";
+
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-22116603-15', 'ios7text.com');
+  ga('send', 'pageview');
+
+</script>
+
+
+<div id="fb-root"></div>
+
+
+ <script>
+  window.fbAsyncInit = function() {
+    FB.init({appId: '634495203286584', status: true, cookie: true,xfbml: true});
+    FB.Event.subscribe("edge.create", function(targetUrl) {
+      downloadFile();
+    });
+  };
+  (function() {
+    var e = document.createElement('script'); e.async = true;
+    e.src = document.location.protocol +
+      '//connect.facebook.net/en_US/all.js';
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script>
+
+
+
+
+
+
+
+<div id="top-panel">
+	<div class="row">
+    
+    	<div class="col-md-4 text-left text-white text-sm p-l m-t-n-sm hidden-sm hidden-xs">
+        	
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- iOS7Text.com - 320 x 50 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:320px;height:50px"
+     data-ad-client="ca-pub-8613718491308127"
+     data-ad-slot="2604257296"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+            
+            	
+            
+                    </div>
+    
+        <div class="col-md-4 col-xs-4">
+        	<a href="http://ios7text.com"><img src="assets/img/logo.png" onclick="renderImg();"></a>
+        </div>
+        <div class="col-md-4 col-xs-4 text-right">
+        	
+             
+			
+            
+<div id="dlbtn">
+<span class="text-white text-xs m-r">Click to generate your image</span>
+            
+            <a class="btn btn-success btn-sm" onclick="downloadImg();"><i class="fa fa fa-arrow-circle-down"></i> Download image</a>
+            </div>
+                        
+        </div>
+    </div>
+</div>
+
+<div id="left-panel" class="side-panel sticky-sidebar">
+
+
+	<div id="startup-help"><div class="pull-left m-r-xl"><i class="fa fa-info-circle m-r-xs"></i></div>Modify your iPhone message. Click on the icons to open the options and tools<br><br><i class="fa fa-exclamation-circle m-r-xs"></i> Add at least 1 message to download the image</div>
+	
+	
+	<section>
+
+        <div class="panel-group" id="accordion">
+        
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                            <header>
+                                <i class="el-icon-adjust-alt"></i>
+                                <div>
+                                    Settings
+                                </div>
+                            </header>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse">
+                    <div class="panel-body">
+                    
+                    	<div class="p-l-lg p-r-lg m-b-xl">
+                            
+                            <div class="form-group text-center">
+                                <label for="exampleInput">Name</label>
+                                <input type="text" class="form-control text-center inputVal" placeholder="Enter name" value="John Doe" id="name">
+                            </div>
+                            
+                            <div class="form-group text-center">
+                                <label for="exampleInput">Operator</label>
+                                <input type="text" class="form-control text-center inputVal" placeholder="Enter operator" value="AT&T" id="operator">
+                            </div>
+                            
+                            <div class="form-group text-center">
+                                <label for="exampleInput"><i class="glyphicon glyphicon glyphicon-time"></i> Clock</label>
+                                <input type="text" class="form-control text-center inputVal" placeholder="Enter clock" value="9:41 AM" id="clock">
+                            </div>
+                            
+                            <div class="form-group text-center">
+                                <label for="exampleInput">"Messages"</label>
+                                <input type="text" class="form-control text-center inputVal" placeholder='Enter word for "messages"' value="Messages" id="text-messages">
+                            </div>
+                            
+                            <div class="form-group text-center">
+                                <label for="exampleInput">"Contact"</label>
+                                <input type="text" class="form-control text-center inputVal" placeholder='Enter word for "contact"' value="Contact" id="text-contact">
+                            </div>
+                            
+                            <div class="form-group text-center">
+                                <label for="exampleInput">"Text Message"</label>
+                                <input type="text" class="form-control text-center inputVal" placeholder='Enter word for "Text Message"' value="Text Message" id="text-textmessage">
+                            </div>
+                            
+                            <div class="form-group text-center">
+                                <label for="exampleInput">"Send"</label>
+                                <input type="text" class="form-control text-center inputVal" placeholder='Enter word for "Send"' value="Send" id="text-send">
+                            </div>
+                            
+                            <div class="checkbox">
+                                <label>
+                                    <input type="radio" name="expandIphone" value="true" checked> <span>Expand iPhone screen</span>
+                                </label>
+                        	</div>
+                            
+                            <div class="checkbox">
+                                <label>
+                                    <input type="radio" name="expandIphone" value="false"> <span>Keep original screen size</span>
+                                </label>
+                        	</div>
+                            
+                            
+                        
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+            <div class="line m-t-none m-b-none"></div>
+            
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                            <header class="c-3">
+                                <i class="fa fa-play"></i>
+                                <div>
+                                    Battery
+                                </div>
+                            </header>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse4" class="panel-collapse collapse">
+                    <div class="panel-body">
+                    
+                    	<div class="p-l-lg p-r-lg m-b-xl">
+                        
+                            <p>
+                                <label for="amount">Battery percent:</label>
+                                <input type="text" id="battery-slider-amount" style="border:0; color:#f6931f; font-weight:bold;width:50px;font-size:12px;margin-top:-8px;text-align:right;" class="pull-right" readonly>
+                            </p>
+                            
+                            <div id="battery-slider"></div>
+                            
+                            <br>
+                            
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" id="battery-show-percent" checked> <span>Show percent</span>
+                                </label>
+                        	</div>
+                        
+                        </div>               
+                    </div>
+                </div>
+            </div>
+            
+            <div class="line m-t-none m-b-none"></div>
+            
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                            <header class="c-1">
+                                <i class="fa fa-signal"></i>
+                                <div>
+                                    Connection
+                                </div>
+                            </header>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse ">
+                    <div class="panel-body">
+                    
+                    	<div class="p-l-lg p-r-lg m-b-xl">
+                        
+                        	<div class="checkbox">
+                                <label>
+                                    <input type="radio" name="connectionType" value="empty" checked> <span>Empty</span>
+                                </label>
+                        	</div>
+                        
+                        	<div class="checkbox">
+                                <label>
+                                    <input type="radio" name="connectionType" value="3g"> <span>3G</span>
+                                </label>
+                        	</div>
+                        
+                        	<div class="checkbox">
+                                <label>
+                                    <input type="radio" name="connectionType" value="4g"> <span>4G</span>
+                                </label>
+                        	</div>
+                            
+                            <div class="checkbox">
+                                <label>
+                                    <input type="radio" name="connectionType" value="wifi" checked> <span>WiFi</span>
+                                </label>
+                        	</div>
+                        
+                        	<div class="connection-slider connection-slider-wifi m-b">
+                                <strong>WiFi connection</strong>
+                                <img src="assets/img/wifi-3.png" id="wifi" class="pull-right m-r-xs">
+                                <div id="wifi-slider"></div>
+                            </div>
+                            
+                            <div class="connection-slider m-b">
+                                <strong>Signal</strong>
+                                <img src="assets/img/3g-3.png" id="connection" class="pull-right m-r-xs">
+                                <div id="connection-slider"></div>
+                            </div>
+                        </div>               
+                    </div>
+                </div>
+            </div>
+
+            <div class="line m-t-none m-b-none"></div>
+            
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                            <header class="c-2">
+                                <i class="fa fa-comments"></i>
+                                <div>
+                                    Messages
+                                </div>
+                            </header>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                    
+                    	<div class="p-l-lg p-r-lg m-b-xl">
+                        
+                        <form id="upload_form" enctype="multipart/form-data" method="post" action="upload.php">
+                        <div class="fileUpload btn btn-default btn-sm">
+                            <span><i class="el-icon-picture"></i> Click here to upload image</span>
+                            <input type="file" class="upload" value="Upload image" name="image_file" id="image_file" accept="image/*" onchange="startUploading();" capture>
+                        </div>
+                        <div id="upload_response"></div>                            
+                        </form>
+                        
+                        <div class="line"></div>
+                        
+                        <div class="checkbox checkbox-grey">
+                        	<label>
+                        		<input type="radio" name="sender" value="grey" checked> <span>Grey</span>
+                        	</label>
+                        </div>
+                        
+                        <div class="checkbox checkbox-green">
+                        	<label>
+                        		<input type="radio" name="sender" value="green"> <span>Green</span>
+                        	</label>
+                        </div>
+                        
+                        <div class="checkbox checkbox-blue">
+                        	<label>
+                        		<input type="radio" name="sender" value="blue"> <span>Blue</span>
+                        	</label>
+                        </div>
+                        
+                        <div class="checkbox checkbox-transparent">
+                        	<label>
+                        		<input type="radio" name="sender" value="transparent"> <span>Timestamp</span>
+                        	</label>
+                        </div>
+                        
+                            <textarea class="form-control" id="msg-content" style="height:150px;" placeholder="Type message ..."></textarea>
+
+                            <div class="m-t-xl text-center">
+                            	<a class="btn btn-primary sendMessage"><i class="fa fa-comment"></i> Add message</a>
+                            </div>
+                        
+                        </div>               
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+	</section>
+
+</div>
+
+
+<div id="center-panel">
+<div id="download-loading">
+	<i class="fa fa-mobile-phone fa-spin il"></i>
+    <br>
+    <strong>Generating image &amp; Download link</strong>
+    <br>
+    <span class="text-o">Hold on a sec...</span>
+</div>
+<div id="download-result">
+	
+    
+    <div class="row p-n m-n m-t-xl">
+    
+        <div class="col-md-8">
+
+
+		
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- iOS7Text.com - 300x250 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-8613718491308127"
+     data-ad-slot="8511190091"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+        
+
+<br><br><br><br>
+
+            <i class="fa fa-save il m-t-xl"></i>
+            
+            <br>
+
+            <div id="status-text">
+            
+                
+                <p class="h4 text-o">
+                    Click on the "Like"-button to unlock your image
+                </p>
+    
+                <p class="h5">
+                    We gave you this awesome generator - You could give us a like, right?
+                </p>
+            
+            </div>
+            
+            <div id="like-response"></div>
+            
+            <br>
+
+            <fb:like href="http://www.ios7text.com"></fb:like>
+
+            <br><br>
+                
+            <div class="alert alert-warning text-sm">If it doesn't work even though you've already liked the page, try to use FireFox and click to unlock again</div>
+
+
+            <div id="status-text-sub">
+            
+
+            </div>
+
+<br><br>
+                    
+                    <a href="http://www.ios7text.com"><i class="fa fa-pencil"></i> Build another? Click here</a>
+            
+            
+
+
+    
+        </div>
+        
+        
+        <div class="col-md-4 text-center">
+        
+        	<div id="image-container">
+        	
+                        	<img id="" id="image-result" style="display:none;">
+            	<img id="blurred-result">   
+                         
+                        </div>
+        
+        </div>
+    
+       
+    </div>
+    
+    
+</div>
+<div id="iphone">
+	<div id="top">
+    
+    </div>
+    <div id="center">
+
+        <div id="msg">
+            <div id="msg-top">
+                <div class="col-md-4 col-xs-4">
+                    <div id="connection" class="pull-left">
+                        <img src="assets/img/3g-3.png" id="signal-img">
+                    </div>
+                    <div id="operator" class="pull-left">
+                        <span id="operator-result" class="result">TELIA</span>
+                    </div>
+                    <div id="connection-type" class="pull-left">
+						<div id="connection-type-wifi-wrapper">
+                        <img src="assets/img/wifi-3.png" id="connection-type-wifi">
+                        </div>
+                        <div id="connection-type-3g" style="display:none;">
+                            3G
+                        </div>
+                        <div id="connection-type-4g" style="display:none;">
+                            4G
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-4 text-center">
+                    <div id="clock">
+                        <span id="clock-result" class="result">21:20</span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-4 text-center">
+                    <div class="pull-right">
+                        <div id="battery">
+                            <div id="battery-percent"></div>
+                        </div>
+                    </div>    
+                    <div class="pull-right m-r-xs">
+                        <div id="battery-percent-number-container"><span id="battery-percent-number">50</span> %</div>
+                    </div>                
+                </div>
+                
+                <div class="clearfix"></div>
+                
+                <div class="col-md-4 col-xs-4" id="txt-messages-container">
+                    <div id="txt-messages">
+                        <div class="pull-left">
+                            <img src="assets/img/iphone/messages-arrow.jpg">
+                        </div>
+                        <div class="pull-left m-l-xs m-t-xxs" id="text-messages-result-container">
+                            <span id="text-messages-result" class="result"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-4 text-right" id="txt-name-container">
+                    <div id="txt-name">
+                        <span id="name-result" class="result"></span>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-4 text-right" id="text-contact-result-container">
+                    <div id="txt-contact">
+                        <span id="text-contact-result" class="result"></span>   
+                    </div>         
+                </div>
+                
+            </div>
+            <div id="msgs-wrapper">
+                <ul id="msgs">
+                
+                	<li class="msg-timestamp example-msg" id="example-msg">
+                        <div class="content">
+                        <p>
+                            <span>Today</span> 8:32 AM
+                        </p>
+                        </div>
+                        <div class="sep"></div>
+                    </li>
+                
+                    <li class="msg green example-msg">
+                        <div class="content">
+                        <p>
+                            asd
+                            Is this really a Fake iOS7 iPhone message?	
+                        </p>
+                        <div class="sep"></div>
+                        </div>
+                    </li>
+                
+                    <li class="msg example-msg">
+                        <div class="content">
+                        <p>
+                            Yeah it is! And you can make one too. Use the tools to the left to build your own.
+                        </p>
+                        </div>
+                        <div class="sep"></div>
+                    </li>
+                    
+                    <li class="msg blue example-msg">
+                        <div class="content">
+                        <p>
+                            And I can even write an iMessage and upload a photo from my desktop or smartphone! Nice!
+                        </p>
+                        </div>
+                        <div class="sep"></div>
+                    </li>
+                    
+                    <li class="msg-img example-msg">
+                    	<div class="top-left-border img-borders"></div>
+                        <div class="top-right-border img-borders"></div>
+                        <div class="bottom-left-border img-borders"></div>
+                        <div class="bottom-right-border img-borders"></div>
+                    	<img src="assets/img/iphone/img.jpg">
+                    </li>
+     
+                </ul>
+            </div>
+            
+            <div id="msgs-bottom">
+                <div id="text-textmessage-result">Tekstbesked</div>
+                <div id="text-send-result">Send</div>
+            </div>
+
+        </div>
+    </div>
+    <div id="bottom">
+    
+    </div>
+</div>
+            
+</div>
+
+
+<div id="right-panel" class="side-panel hidden-sm hidden-xs">
+    <div class="text-center m-t">
+        
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- iOS7Text.com - 200x200 -->
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:200px;height:200px"
+                 data-ad-client="ca-pub-8613718491308127"
+                 data-ad-slot="8650790894"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+    		</script>
+        
+    </div>
+    
+
+    <div class="text-center m-t-xl">
+        
+
+        
+        <p class="m-l-lg m-r-lg">
+        	<strong>Fake iPhone Text Generator<br>iOS7 Clone</strong>
+        </p>
+        <p class="m-l-lg m-r-lg">
+        	Worlds first iOS7 text message generator. Even though they updated to iOS7 <i>ages</i> ago, people still seem to post these fake <i>old</i> iPhone messages everywhere.</p>
+        <p class="m-l-lg m-r-lg">
+        	We grew tired of that so we decided to make an upgraded generator that supports iOS7 elements to make fake iPhone text messages.
+        </p>
+        
+        
+    
+    </div>
+
+
+</div>
+
+
+<footer>
+	<div class="row">
+    
+    	<div class="col-md-8 text-left text-xs p-l m-t-xs">
+        	Other online generators
+<a class="btn btn-xs btn-custom" href="http://pokemongofake.com" target="_blank">Fake Pokemon GO</a> 
+			<a class="btn btn-xs btn-custom" href="http://snapsr.com" target="_blank">Fake Snapchat Generator</a>            
+<a class="btn btn-xs btn-custom" href="http://www.onlinetattoomaker.com" target="_blank">Online Tattoo Maker</a>
+        	<a class="btn btn-xs btn-custom" href="http://www.fakephonetext.com" target="_blank">Fake iPhone Text Messages - Older iOS</a>
+            <a class="btn btn-xs btn-custom" href="http://www.simitator.com" target="_blank">Prank friends with fake <strong>Facebook or Twitter</strong> posts</a>
+        </div>
+    
+        <div class="col-md-4 text-right">
+
+            <!-- AddThis Button BEGIN -->
+
+<div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_button_tweet"></a>
+<a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+<a class="addthis_counter addthis_pill_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4d94d2e467facc36"></script>
+<!-- AddThis Button END -->
+
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

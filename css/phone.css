@@ -1,7 +1,112 @@
-.phone-container { 
+.phone-container {
   width: 367px;
   height: 667px;
   position: absolute;
   top: 20px;
   left: 20px;
+  padding:0;
+  margin:0;
+}
+
+.col-md-4 {
+  padding: 0;
+  margin: 0;
+}
+
+#msg-top {
+  height: 76px;
+  border-bottom: solid 1px rgba(212, 212, 212, 1);
+  font: 12px Helvetica, Arial, sans-serif;
+  color: #101010;
+  padding: 6px 7px;
+  background-color: rgba(247, 247, 247, 0.95);
+  width: 367px;
+  height: 75px;
+  position: absolute;
+  z-index: 998;
+}
+
+#msg-top #connection {
+  padding: 0;
+}
+
+#msg-top #operator {
+  padding: 1px 5px;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+#msg-top #connection-type {
+  padding: 0 2px;
+  text-shadow: 1px 1px 0 #fff;
+  height: 16px;
+  overflow: hidden;
+}
+
+#msg-top #clock {
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+#msg-top #battery {
+  background-image: url('../img/iphone/battery.png');
+  width: 30px;
+  height: 13px;
+  padding: 2px 1px;
+}
+
+#msg-top #battery #battery-percent {
+  background-image: url('../img/iphone/battery-percent.jpg');
+  border: solid 1px #eee;
+  width: 50%;
+  max-width: 25px;
+  height: 9px;
+}
+
+#msg-top #battery #battery-percent.red {
+  background-image: none;
+  background-color: #ff3b30;
+}
+
+#msg-top #txt-messages {
+  color: #0079ff;
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 1px 1px 0 #fff;
+  font-size: 19px;
+  margin: 13px 7px;
+}
+
+#msg-top #txt-messages i {
+  font-size: 40px;
+  margin-top: -6px;
+}
+
+#msg-top #txt-name {
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  text-shadow: 1px 1px 0 #fff;
+  font-size: 19px;
+  margin-top: 14px;
+  position: absolute;
+  background-color: #f7f7f7;
+  width: 170px;
+  text-align: center;
+  margin-left: 0px;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+
+#msg-top #txt-name.active {
+  width: 270px;
+  margin-left: -97px;
+}
+
+#msg-top #txt-contact {
+  color: #0079ff;
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 1px 1px 0 #fff;
+  font-size: 19px;
+  margin: 13px 0;
+  text-align: right;
 }
