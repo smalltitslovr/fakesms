@@ -5,139 +5,152 @@
     <title>fakesms</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/framework7.min.css">
+    <link rel="stylesheet" href="css/shared.css">
     <link rel="stylesheet" href="css/phone.css">
     <link rel="stylesheet" href="css/messages.css">
-    <style>
-      .message-text { 
-        -webkit-mask-box-image: none !important;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="phone-container">
-      <div id="msg-top">
-        <div class="col-md-4 col-xs-4">
-          <div id="connection" class="pull-left">
-            <img src="img/3g-3.png" id="signal-img">
-          </div>
-          <div id="operator" class="pull-left">
-              <span id="operator-result" class="result">AT&amp;T</span>
-          </div>
-          <div id="connection-type" class="pull-left">
-						<div id="connection-type-wifi-wrapper">
-              <img src="img/wifi-3.png" id="connection-type-wifi">
-              </div>
-              <div id="connection-type-3g" style="display:none;">
-                  3G
-              </div>
-              <div id="connection-type-4g" style="display:none;">
-                  4G
-              </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-xs-4 text-center">
-            <div id="clock">
-                <span id="clock-result" class="result">9:41 AM</span>
-            </div>
-        </div>
-        <div class="col-md-4 col-xs-4 text-center">
-            <div class="pull-right">
-                <div id="battery">
-                    <div id="battery-percent"></div>
-                </div>
-            </div>    
-            <div class="pull-right m-r-xs">
-                <div id="battery-percent-number-container"><span id="battery-percent-number">50</span> %</div>
-            </div>                
-        </div>
-                
-        <div class="clearfix"></div>
-                
-        <div class="col-md-4 col-xs-4" id="txt-messages-container">
-            <div id="txt-messages">
-                <div class="pull-left">
-                    <img src="img/iphone/messages-arrow.jpg">
-                </div>
-                <div class="pull-left m-l-xs m-t-xxs" id="text-messages-result-container">
-                    <span id="text-messages-result" class="result">Messages</span>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-xs-4 text-right" id="txt-name-container">
-            <div id="txt-name">
-                <span id="name-result" class="result">John Doe</span>
-            </div>
-        </div>
-        <div class="col-md-4 col-xs-4 text-right" id="text-contact-result-container">
-            <div id="txt-contact">
-                <span id="text-contact-result" class="result">Contact</span>   
-            </div>         
-        </div>      
-      </div> 
-    
-      <div class="clearfix"></div>
-      
-      <div class="page-content messages-content">
-        <div class="messages">
-          <div class="messages-date">Sunday, Feb 9 <span>12:58</span></div>
-          <div class="message message-sent">
-            <div class="message-text">Hello</div>
-          </div>
-          <div class="message message-sent">
-            <div class="message-text">How are you?</div>
-          </div>
-          <div class="message message-received">
-            <div class="message-name">Kate</div>
-            <div class="message-text">I am fine, thanks</div>
-            <div style="background-image:url(http://lorempixel.com/output/people-q-c-100-100-9.jpg)" class="message-avatar" crossorigin="anonymous"></div>
-          </div>
-          <div class="messages-date">Sunday, Feb 3 <span>11:58</span></div>
-          <div class="message message-sent">
-            <div class="message-text">Nice photo?</div>
-          </div>
-          <div class="message message-sent message-pic">
-            <div class="message-text"><img src="http://i.imgur.com/CCDj00U.jpg"></div>
-            <div class="message-label">Delivered</div>
-          </div>
-          <div class="message message-received">
-            <div class="message-name">Kate</div>
-            <div class="message-text">Wow, awesome!</div>
-            <div style="background-image:url(http://lorempixel.com/output/people-q-c-100-100-9.jpg)" class="message-avatar" crossorigin="anonymous"></div>
-          </div>
-          <div class="message message-received">
-            <div class="message-name">Kate</div>
-            <div class="message-text">Wow, awesome!</div>
-            <div style="background-image:url(http://lorempixel.com/output/people-q-c-100-100-9.jpg)" class="message-avatar" crossorigin="anonymous"></div>
-          </div>
-          <div class="message message-received">
-            <div class="message-name">Kate</div>
-            <div class="message-text">Wow, awesome!</div>
-            <div style="background-image:url(http://lorempixel.com/output/people-q-c-100-100-9.jpg)" class="message-avatar" crossorigin="anonymous"></div>
-          </div>
-          <div class="message message-received">
-            <div class="message-name">Kate</div>
-            <div class="message-text">Wow, awesome!</div>
-            <div style="background-image:url(http://lorempixel.com/output/people-q-c-100-100-9.jpg)" class="message-avatar" crossorigin="anonymous"></div>
-          </div>
-          <div class="message message-received">
-            <div class="message-name">Kate</div>
-            <div class="message-text">Wow, awesome!</div>
-            <div style="background-image:url(http://lorempixel.com/output/people-q-c-100-100-9.jpg)" class="message-avatar" crossorigin="anonymous"></div>
-          </div>
-          <div class="message message-received">
-            <div class="message-name">Kate</div>
-            <div class="message-text">Wow, awesome!</div>
-            <div style="background-image:url(http://lorempixel.com/output/people-q-c-100-100-9.jpg)" class="message-avatar" crossorigin="anonymous"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script
+    <link rel="stylesheet" href="css/controls.css">
+		<script
       src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/framework7.min.js"></script>
     <script type="text/javascript" src="js/dom-to-image.min.js"></script>
     <script type="text/javascript" src="js/export.js"></script>
-  </body>
+  </head>
+  <body>
+		<div class="row page-container">
+			<div id="controls-container" class="container col-sm-6">
+				<h1>Controls</h1>
+				<label for="message-content">Messages: </label>
+				<textarea id="message-content"></textarea>
+			</div>
+			<div id="phone-container" class="container col-sm-6">
+				<h1>Preview</h1>
+				<div id="phone">
+					<div id="msg-top" class="row">
+						<div class="col-md-4 col-xs-4">
+							<div id="connection" class="pull-left">
+								<img src="img/3g-3.png" id="signal-img">
+							</div>
+							<div id="operator" class="pull-left">
+									<span id="operator-result" class="result">AT&amp;T</span>
+							</div>
+							<div id="connection-type" class="pull-left">
+								<div id="connection-type-wifi-wrapper">
+									<img src="img/wifi-3.png" id="connection-type-wifi">
+									</div>
+									<div id="connection-type-3g" style="display:none;">
+											3G
+									</div>
+									<div id="connection-type-4g" style="display:none;">
+											4G
+									</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-xs-4 text-center">
+								<div id="clock">
+										<span id="clock-result" class="result">9:41 AM</span>
+								</div>
+						</div>
+						<div class="col-md-4 col-xs-4 text-center">
+								<div class="pull-right">
+										<div id="battery">
+												<div id="battery-percent"></div>
+										</div>
+								</div>    
+								<div class="pull-right m-r-xs">
+										<div id="battery-percent-number-container"><span id="battery-percent-number">50</span>%</div>
+								</div>                
+						</div>
+
+						<div class="clearfix"></div>
+
+						<div class="col-md-4 col-xs-4" id="txt-messages-container">
+								<div id="txt-messages">
+										<div class="pull-left">
+												<img src="img/iphone/messages-arrow.jpg">
+										</div>
+										<div class="pull-left m-l-xs m-t-xxs" id="text-messages-result-container">
+												<span id="text-messages-result" class="result">Messages</span>
+										</div>
+								</div>
+						</div>
+						<div class="col-md-4 col-xs-4 text-right" id="txt-name-container">
+								<div id="txt-name">
+										<span id="name-result" class="result">John Doe</span>
+								</div>
+						</div>
+						<div class="col-md-4 col-xs-4 text-right" id="text-contact-result-container">
+								<div id="txt-contact">
+										<span id="text-contact-result" class="result">Contact</span>   
+								</div>         
+						</div>      
+					</div> 
+
+					<div class="clearfix"></div>
+
+					<div class="page-content messages-container">
+						<div class="messages">
+							<div class="messages-date">Sunday, Feb 9 <span>12:58</span></div>
+							<div class="message message-sent">
+								<div class="message-text">Hello</div>
+							</div>
+							<div class="message message-sent">
+								<div class="message-text">How are you?</div>
+							</div>
+							<div class="message message-received">
+								<div class="message-name">Kate</div>
+								<div class="message-text">I am fine, thanks</div>
+								<div style="background-image:url(http://lorempixel.com/output/people-q-c-100-100-9.jpg)" class="message-avatar" crossorigin="anonymous"></div>
+							</div>
+							<div class="messages-date">Sunday, Feb 3 <span>11:58</span></div>
+							<div class="message message-sent">
+								<div class="message-text">Nice photo?</div>
+							</div>
+							<div class="message message-sent message-pic">
+								<div class="message-text"><img src="http://i.imgur.com/CCDj00U.jpg"></div>
+								<div class="message-label">Delivered</div>
+							</div>
+							<div class="message message-received">
+								<div class="message-name">Kate</div>
+								<div class="message-text">Wow, awesome!</div>
+								<div style="background-image:url(http://lorempixel.com/output/people-q-c-100-100-9.jpg)" class="message-avatar" crossorigin="anonymous"></div>
+							</div>
+							<div class="message message-received">
+								<div class="message-name">Kate</div>
+								<div class="message-text">Wow, awesome!</div>
+								<div style="background-image:url(http://lorempixel.com/output/people-q-c-100-100-9.jpg)" class="message-avatar" crossorigin="anonymous"></div>
+							</div>
+							<div class="message message-received">
+								<div class="message-name">Kate</div>
+								<div class="message-text">Wow, awesome!</div>
+								<div style="background-image:url(http://lorempixel.com/output/people-q-c-100-100-9.jpg)" class="message-avatar" crossorigin="anonymous"></div>
+							</div>
+							<div class="message message-received">
+								<div class="message-name">Kate</div>
+								<div class="message-text">Wow, awesome!</div>
+								<div style="background-image:url(http://lorempixel.com/output/people-q-c-100-100-9.jpg)" class="message-avatar" crossorigin="anonymous"></div>
+							</div>
+							<div class="message message-received">
+								<div class="message-name">Kate</div>
+								<div class="message-text">Wow, awesome!</div>
+								<div style="background-image:url(http://lorempixel.com/output/people-q-c-100-100-9.jpg)" class="message-avatar" crossorigin="anonymous"></div>
+							</div>
+							<div class="message message-received">
+								<div class="message-name">Kate</div>
+								<div class="message-text">Wow, awesome!</div>
+								<div style="background-image:url(http://lorempixel.com/output/people-q-c-100-100-9.jpg)" class="message-avatar" crossorigin="anonymous"></div>
+							</div>
+						</div>
+					</div>
+				
+					<div id="msgs-bottom">
+						<div id="text-textmessage-result">Text Message</div>
+						<div id="text-send-result">Send</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</body>
 </html>

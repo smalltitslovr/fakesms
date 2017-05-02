@@ -1,0 +1,20 @@
+.page-container {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+.container {
+  padding: 0px 20px;
+  background-color: #ddf;
+}
+
+.container h1 {
+  border-bottom: 1px solid black;
+}
+
+#phone-container {
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}

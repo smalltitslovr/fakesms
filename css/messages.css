@@ -1,3 +1,11 @@
-.messages {
-  margin-top: 75px;
+.messages-container {
+  height: 540px;
+}
+.messages-container .messages {
+/*   padding: 10px; */
+}
+
+/* Fix a bug with Framework7 */
+.message-text { 
+  -webkit-mask-box-image: none !important;
 }
