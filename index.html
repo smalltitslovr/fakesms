@@ -4,8 +4,11 @@
     <meta charset="utf-8">
     <title>fakesms</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/framework7.min.css">
-    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="Framework7-1.6.0/dist/css/framework7.ios.min.css">
+		<link rel="stylesheet" href="Framework7-1.6.0/dist/css/framework7.ios.colors.min.css">
+
+		
+		<link rel="stylesheet" href="css/shared.css">
     <link rel="stylesheet" href="css/phone.css">
     <link rel="stylesheet" href="css/messages.css">
     <link rel="stylesheet" href="css/controls.css">
@@ -13,7 +16,10 @@
       src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/framework7.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+<!--     <script type="text/javascript" src="js/framework7.min.js"></script> -->
+		
+    <script type="text/javascript" src="Framework7-1.6.0/dist/js/framework7.min.js"></script>
     <script type="text/javascript" src="js/dom-to-image.min.js"></script>
     <script type="text/javascript" src="js/export.js"></script>
     <script type="text/javascript" src="js/parser.js"></script>
@@ -22,6 +28,10 @@
 		<div class="row page-container">
 			<div id="controls-container" class="container col-sm-6">
 				<h1>Controls</h1>
+				<label for="message-sender">Sender: </label>
+				<input id="message-sender" type="text"></input>
+				<span>(Recipient is inferred from messages)</span>
+				<br />
 				<label for="message-content">Messages: </label>
 				<textarea id="message-content"></textarea>
 			</div>
@@ -90,60 +100,24 @@
 
 					<div class="clearfix"></div>
 
-					<div class="page-content messages-container">
-						<div id="messages" class="messages">
-							<div class="messages-date">Sunday, Feb 9 <span>12:58</span></div>
-							<div class="message message-sent">
-								<div class="message-text">Hello</div>
-							</div>
-							<div class="message message-sent">
-								<div class="message-text">How are you?</div>
-							</div>
-							<div class="message message-received">
-								<div class="message-name">Kate</div>
-								<div class="message-text">I am fine, thanks</div>
-								<div style="background-image:url(http://lorempixel.com/output/people-q-c-100-100-9.jpg)" class="message-avatar" crossorigin="anonymous"></div>
-							</div>
-							<div class="messages-date">Sunday, Feb 3 <span>11:58</span></div>
-							<div class="message message-sent">
-								<div class="message-text">Nice photo?</div>
-							</div>
-							<div class="message message-sent message-pic">
-								<div class="message-text"><img src="http://i.imgur.com/CCDj00U.jpg"></div>
-								<div class="message-label">Delivered</div>
-							</div>
-							<div class="message message-received">
-								<div class="message-name">Kate</div>
-								<div class="message-text">Wow, awesome!</div>
-								<div style="background-image:url(http://lorempixel.com/output/people-q-c-100-100-9.jpg)" class="message-avatar" crossorigin="anonymous"></div>
-							</div>
-							<div class="message message-received">
-								<div class="message-name">Kate</div>
-								<div class="message-text">Wow, awesome!</div>
-								<div style="background-image:url(http://lorempixel.com/output/people-q-c-100-100-9.jpg)" class="message-avatar" crossorigin="anonymous"></div>
-							</div>
-							<div class="message message-received">
-								<div class="message-name">Kate</div>
-								<div class="message-text">Wow, awesome!</div>
-								<div style="background-image:url(http://lorempixel.com/output/people-q-c-100-100-9.jpg)" class="message-avatar" crossorigin="anonymous"></div>
-							</div>
-							<div class="message message-received">
-								<div class="message-name">Kate</div>
-								<div class="message-text">Wow, awesome!</div>
-								<div style="background-image:url(http://lorempixel.com/output/people-q-c-100-100-9.jpg)" class="message-avatar" crossorigin="anonymous"></div>
-							</div>
-							<div class="message message-received">
-								<div class="message-name">Kate</div>
-								<div class="message-text">Wow, awesome!</div>
-								<div style="background-image:url(http://lorempixel.com/output/people-q-c-100-100-9.jpg)" class="message-avatar" crossorigin="anonymous"></div>
-							</div>
-							<div class="message message-received">
-								<div class="message-name">Kate</div>
-								<div class="message-text">Wow, awesome!</div>
-								<div style="background-image:url(http://lorempixel.com/output/people-q-c-100-100-9.jpg)" class="message-avatar" crossorigin="anonymous"></div>
+					
+					<div class="messages-container">
+						<div class="views">
+						<!-- Your main view, should have "view-main" class -->
+						<div class="view view-main">
+							<!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+							<div class="pages navbar-through toolbar-through">
+								<!-- Page, "data-page" contains page name -->
+								<div data-page="index" class="page">
+									<!-- Scrollable page content -->
+									<div class="page-content messages-content">
+											<div class="messages"></div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
+
 				
 					<div id="msgs-bottom">
 						<div id="text-textmessage-result">Text Message</div>
