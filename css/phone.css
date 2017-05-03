@@ -1,11 +1,14 @@
 #phone-container {}
 
+.phone-wrapper {
+  width: 367px;
+  margin-left: auto;
+  margin-right: auto;
+}
 #phone {
   background-color: white;
   width: 367px;
   height: 667px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .col-md-4 {

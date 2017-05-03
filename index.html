@@ -6,8 +6,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="Framework7-1.6.0/dist/css/framework7.ios.min.css">
 		<link rel="stylesheet" href="Framework7-1.6.0/dist/css/framework7.ios.colors.min.css">
-
-		
 		<link rel="stylesheet" href="css/shared.css">
     <link rel="stylesheet" href="css/phone.css">
     <link rel="stylesheet" href="css/messages.css">
@@ -17,8 +15,6 @@
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
-<!--     <script type="text/javascript" src="js/framework7.min.js"></script> -->
-		
     <script type="text/javascript" src="Framework7-1.6.0/dist/js/framework7.min.js"></script>
     <script type="text/javascript" src="js/dom-to-image.min.js"></script>
     <script type="text/javascript" src="js/export.js"></script>
@@ -34,94 +30,98 @@
 				<br />
 				<label for="message-content">Messages: </label>
 				<textarea id="message-content"></textarea>
+				<button id="generate-images">Generate Images</button>
+				<span id="imgur-album-output"></span>
 			</div>
 			<div id="phone-container" class="container col-sm-6">
 				<h1>Preview</h1>
-				<div id="phone">
-					<div id="msg-top" class="row">
-						<div class="col-md-4 col-xs-4">
-							<div id="connection" class="pull-left">
-								<img src="img/3g-3.png" id="signal-img">
-							</div>
-							<div id="operator" class="pull-left">
-									<span id="operator-result" class="result">AT&amp;T</span>
-							</div>
-							<div id="connection-type" class="pull-left">
-								<div id="connection-type-wifi-wrapper">
-									<img src="img/wifi-3.png" id="connection-type-wifi">
-									</div>
-									<div id="connection-type-3g" style="display:none;">
-											3G
-									</div>
-									<div id="connection-type-4g" style="display:none;">
-											4G
-									</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-xs-4 text-center">
-								<div id="clock">
-										<span id="clock-result" class="result">9:41 AM</span>
+				<div class="phone-wrapper">
+					<div id="phone">
+						<div id="msg-top" class="row">
+							<div class="col-md-4 col-xs-4">
+								<div id="connection" class="pull-left">
+									<img src="img/3g-3.png" id="signal-img">
 								</div>
-						</div>
-						<div class="col-md-4 col-xs-4 text-center">
-								<div class="pull-right">
-										<div id="battery">
-												<div id="battery-percent"></div>
+								<div id="operator" class="pull-left">
+										<span id="operator-result" class="result">AT&amp;T</span>
+								</div>
+								<div id="connection-type" class="pull-left">
+									<div id="connection-type-wifi-wrapper">
+										<img src="img/wifi-3.png" id="connection-type-wifi">
 										</div>
-								</div>    
-								<div class="pull-right m-r-xs">
-										<div id="battery-percent-number-container"><span id="battery-percent-number">50</span>%</div>
-								</div>                
-						</div>
+										<div id="connection-type-3g" style="display:none;">
+												3G
+										</div>
+										<div id="connection-type-4g" style="display:none;">
+												4G
+										</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-xs-4 text-center">
+									<div id="clock">
+											<span id="clock-result" class="result">9:41 AM</span>
+									</div>
+							</div>
+							<div class="col-md-4 col-xs-4 text-center">
+									<div class="pull-right">
+											<div id="battery">
+													<div id="battery-percent"></div>
+											</div>
+									</div>    
+									<div class="pull-right m-r-xs">
+											<div id="battery-percent-number-container"><span id="battery-percent-number">50</span>%</div>
+									</div>                
+							</div>
+
+							<div class="clearfix"></div>
+
+							<div class="col-md-4 col-xs-4" id="txt-messages-container">
+									<div id="txt-messages">
+											<div class="pull-left">
+													<img src="img/iphone/messages-arrow.jpg">
+											</div>
+											<div class="pull-left m-l-xs m-t-xxs" id="text-messages-result-container">
+													<span id="text-messages-result" class="result">Messages</span>
+											</div>
+									</div>
+							</div>
+							<div class="col-md-4 col-xs-4 text-right" id="txt-name-container">
+									<div id="txt-name">
+											<span id="name-result" class="result">John Doe</span>
+									</div>
+							</div>
+							<div class="col-md-4 col-xs-4 text-right" id="text-contact-result-container">
+									<div id="txt-contact">
+											<span id="text-contact-result" class="result">Contact</span>   
+									</div>         
+							</div>      
+						</div> 
 
 						<div class="clearfix"></div>
 
-						<div class="col-md-4 col-xs-4" id="txt-messages-container">
-								<div id="txt-messages">
-										<div class="pull-left">
-												<img src="img/iphone/messages-arrow.jpg">
-										</div>
-										<div class="pull-left m-l-xs m-t-xxs" id="text-messages-result-container">
-												<span id="text-messages-result" class="result">Messages</span>
-										</div>
-								</div>
-						</div>
-						<div class="col-md-4 col-xs-4 text-right" id="txt-name-container">
-								<div id="txt-name">
-										<span id="name-result" class="result">John Doe</span>
-								</div>
-						</div>
-						<div class="col-md-4 col-xs-4 text-right" id="text-contact-result-container">
-								<div id="txt-contact">
-										<span id="text-contact-result" class="result">Contact</span>   
-								</div>         
-						</div>      
-					</div> 
 
-					<div class="clearfix"></div>
-
-					
-					<div class="messages-container">
-						<div class="views">
-						<!-- Your main view, should have "view-main" class -->
-						<div class="view view-main">
-							<!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
-							<div class="pages navbar-through toolbar-through">
-								<!-- Page, "data-page" contains page name -->
-								<div data-page="index" class="page">
-									<!-- Scrollable page content -->
-									<div class="page-content messages-content">
-											<div class="messages"></div>
+						<div class="messages-container">
+							<div class="views">
+							<!-- Your main view, should have "view-main" class -->
+							<div class="view view-main">
+								<!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+								<div class="pages navbar-through toolbar-through">
+									<!-- Page, "data-page" contains page name -->
+									<div data-page="index" class="page">
+										<!-- Scrollable page content -->
+										<div class="page-content messages-content">
+												<div class="messages"></div>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
 
-				
-					<div id="msgs-bottom">
-						<div id="text-textmessage-result">Text Message</div>
-						<div id="text-send-result">Send</div>
+
+						<div id="msgs-bottom">
+							<div id="text-textmessage-result">Text Message</div>
+							<div id="text-send-result">Send</div>
+						</div>
 					</div>
 				</div>
 			</div>	

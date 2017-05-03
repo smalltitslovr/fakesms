@@ -33,11 +33,18 @@ function dateToTimestampParts(date, day=true, time=true) {
 }
 
 function smartTimestamp(msg, i, arr) {
-  const dateTime = msg.dateTime
+  let dateTime = msg.dateTime
 
   if (i === 0) {
+    if (!dateTime.isValid()) {
+      // Invalid date, but it's the first message. Use now as the timestamp
+      dateTime = moment()
+    }
     // We're processing the first message. Show the timestamp
     return dateToTimestampParts(dateTime)
+  } else if (!dateTime.isValid()) {
+    // We've got an invalid date. Don't show it
+    return {}
   } else {
     const prevDateTime = arr[i-1].dateTime
 
@@ -65,11 +72,14 @@ function parseMessages(input, senderName) {
   
   const lines = input.split('\n')
   var recipientNames = []
+  var recipientName;
     
-  const messages = lines.map(function(line, i) {
+  var messages = lines.map(function(line, i) {
     const match = line.match(LINE_REGEX)
     if (match) {
       const isImage = match[3] !== undefined && match[5] !== undefined
+      const text = isImage ? `<img src="${match[4]}" />` : match[4]
+      
       const name = match[2]
       const isSender = senderName == name
       const type = isSender ? 'sent' : 'received'
@@ -78,7 +88,7 @@ function parseMessages(input, senderName) {
       if (name !== senderName && recipientNames.indexOf(name) === -1) { recipientNames.push(name); }
       
       return {
-        text: match[4],
+        text,
         name,
         type,
         dateTime: moment(match[1], ["HH:mm", "YYYY-MM-DD HH:mm"])
@@ -86,12 +96,16 @@ function parseMessages(input, senderName) {
     }
   })
   .filter(function(n){ return n !== undefined })
-  // Smart message timestamps
-  .map(function(msg, i, arr) { 
+  
+  recipientName = recipientNames.length > 1 ? "Group" : recipientNames[0]
+  messages = messages.map(function(msg, i, arr) { 
+    if (recipientName !== "Group") { delete msg.name }
+    
+    
     return Object.assign(smartTimestamp(msg, i, arr), msg)
   })
   
-  return [messages, recipientNames]
+  return [messages, recipientName]
 }
 
 function setMessages(messages) {
@@ -102,8 +116,7 @@ function setMessages(messages) {
 function updatePreview(){
     const rawMessages = $("#message-content").val()
     const senderName = $("#message-sender").val()
-    const [messages, recipientNames] = parseMessages(rawMessages, senderName)
-    const recipientName = recipientNames.length > 1 ? "Group" : recipientNames[0]
+    const [messages, recipientName] = parseMessages(rawMessages, senderName)
     $("#name-result").html(recipientName)
    
     setMessages(messages);
