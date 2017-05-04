@@ -114,13 +114,13 @@ function setMessages(messages) {
 }
 
 function updatePreview(){
-    const rawMessages = $("#message-content").val()
-    const senderName = $("#message-sender").val()
-    const [messages, recipientName] = parseMessages(rawMessages, senderName)
-    $("#name-result").html(recipientName)
-   
-    setMessages(messages);
-  }
+  const rawMessages = $("#message-content").val()
+  const senderName = $("#message-sender").val()
+  const [messages, recipientName] = parseMessages(rawMessages, senderName)
+  $("#name-result").html(recipientName)
+
+  setMessages(messages);
+}
 
 $(document).ready(function(){
   f = new Framework7();

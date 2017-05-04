@@ -30,8 +30,8 @@
 				<br />
 				<label for="message-content">Messages: </label>
 				<textarea id="message-content"></textarea>
-				<button id="generate-images">Generate Images</button>
-				<span id="imgur-album-output"></span>
+				<!--<button id="generate-images">Generate Images</button>
+				<span id="imgur-album-output"></span>-->
 			</div>
 			<div id="phone-container" class="container col-sm-6">
 				<h1>Preview</h1>
@@ -109,8 +109,8 @@
 									<!-- Page, "data-page" contains page name -->
 									<div data-page="index" class="page">
 										<!-- Scrollable page content -->
-										<div class="page-content messages-content">
-												<div class="messages"></div>
+										<div id="messages-viewport" class="page-content messages-content">
+												<div id="messages-body" class="messages"></div>
 										</div>
 									</div>
 								</div>

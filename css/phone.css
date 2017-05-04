@@ -153,8 +153,5 @@
   padding: 12px 12px;
   float: right;
   text-align: right;
-  background-image: url('../img/bg-send.jpg');
-  background-repeat: no-repeat;
-  background-position: -3px 7px;
   min-width: 65px;
 }
