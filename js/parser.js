@@ -68,17 +68,29 @@ function smartTimestamp(msg, i, arr) {
 }
 
 function parseMessages(input, senderName) {
-  const LINE_REGEX = /^(?:\[(.*)\]\s*)?(.+?):\s*(\{)?([^\{\}]*)(\})?$/
+  const LINE_REGEX = /^(?:\[(.*)\]\s*)?(.+?):\s*(.*)$/
+  const IMAGE_REGEX = /^{(.*)}$/
+  const EMOJI_REGEX = /:(?:em-)?(.+?):/g
   
   const lines = input.split('\n')
   var recipientNames = []
-  var recipientName;
+  var recipientName
     
   var messages = lines.map(function(line, i) {
     const match = line.match(LINE_REGEX)
     if (match) {
-      const isImage = match[3] !== undefined && match[5] !== undefined
-      const text = isImage ? `<img src="${match[4]}" />` : match[4]
+      const body = match[3]
+      
+      const imageMatch = body.match(IMAGE_REGEX)
+      var text;
+      if (imageMatch) {
+        const isImage = true
+        text = `<img src="${imageMatch[1]}" />`
+      } else {
+        const isImage = false
+        // Replace emojis with their html counterpart
+        text = body.replace(EMOJI_REGEX, '<i class="em em-$1"></i>')
+      }
       
       const name = match[2]
       const isSender = senderName == name
