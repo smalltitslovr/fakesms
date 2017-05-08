@@ -36,10 +36,14 @@
 				<div class="docs">
 					<h4>Usage:</h4>
 					<p>
-						Message format: <b>[2017-05-08 14:00] John: Hello world!</b>
+						Each message must be on it's own line, in this format: <b>[2017-05-08 14:00] John: Hello world!</b> 
 					</p>
 					<p>
-						The timestamp is optional. If you include it, the date is optional. The date must be in the YYYY-MM-DD format, and the time must be in military time. 
+						The timestamp is optional. If you include it, you must include the time in <b>military format (24hr)</b>. The date 
+						is optional, but if you include it, it must be in the format <b>YYYY-MM-DD</b>
+					</p>
+					<p>
+						Group chats are also supported. Simply add more than three people into the message text.
 					</p>
 					<p>
 						In the body (after the colon), you can put any of the following:
