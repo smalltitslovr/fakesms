@@ -33,38 +33,43 @@ function dateToTimestampParts(date, day=true, time=true) {
 }
 
 function smartTimestamp(msg, i, arr) {
-  let dateTime = msg.dateTime
-
   if (i === 0) {
-    if (!dateTime.isValid()) {
+    if (msg.dateTimeFormat === null || !msg.dateTime.isValid()) {
       // Invalid date, but it's the first message. Use now as the timestamp
-      dateTime = moment()
+      msg.dateTime = moment()
     }
     // We're processing the first message. Show the timestamp
-    return dateToTimestampParts(dateTime)
-  } else if (!dateTime.isValid()) {
-    // We've got an invalid date. Don't show it
-    return {}
+    return Object.assign(msg, dateToTimestampParts(msg.dateTime))
   } else {
     const prevDateTime = arr[i-1].dateTime
-
-
-    if (prevDateTime.isSame(dateTime, "day")) {
-      const minsApart = (dateTime - prevDateTime) / 60000;
-      if (minsApart >= 5) {
-        // It's been at least 5 minutes. Show the timestamp
-        return dateToTimestampParts(dateTime)
-      } else {
-        // It's been less than 5 minutes. Don't show the timestamp
-        return {}
+    if (msg.dateTimeFormat === null) {
+      // No dateTime, so we won't show the timestamp in the html. 
+      // But we do want to set the date for the next message
+      msg.dateTime = prevDateTime
+      return msg
+    } else {
+    
+      // No date. Set it to the previous one
+      if (msg.dateTimeFormat == 'time') {
+        msg.dateTime.set({'year': prevDateTime.year(), 'month': prevDateTime.month(), 'date': prevDateTime.date()})
       }
 
-    } else {
-      // We're on a new day. Show the timestamp
-      return dateToTimestampParts(dateTime)
+      if (prevDateTime.isSame(msg.dateTime, "day")) {
+        const minsApart = (msg.dateTime - prevDateTime) / 60000;
+        if (minsApart >= 5) {
+          // It's been at least 5 minutes. Show the timestamp
+          return Object.assign(msg, dateToTimestampParts(msg.dateTime))
+        } else {
+          // It's been less than 5 minutes. Don't show the timestamp
+          return msg
+        }
+
+      } else {
+        // We're on a new day. Show the timestamp
+        return Object.assign(msg, dateToTimestampParts(msg.dateTime))
+      }
     }
   }
-
 }
 
 function parseMessages(input, senderName) {
@@ -99,23 +104,41 @@ function parseMessages(input, senderName) {
       // Add the name to the list of recipients, if it's missing
       if (name !== senderName && recipientNames.indexOf(name) === -1) { recipientNames.push(name); }
       
+      // Parse the timestamp
+      const rawTimestamp = match[1]
+      let dateTime, dateTimeFormat
+      if (rawTimestamp) {
+        if (rawTimestamp.match(/^(\d\d\d\d-\d\d-\d\d\s+)?\d\d:\d\d$/)[1]) {
+          // Includes date
+          dateTimeFormat = 'datetime'
+          dateTime = moment(rawTimestamp, "YYYY-MM-DD HH:mm")
+        } else {
+          // Time only
+          dateTimeFormat = 'time'
+          dateTime = moment(rawTimestamp, "HH:mm")
+        }
+      } else {
+        dateTimeFormat = null
+        dateTime = null
+      }
+      
       return {
         text,
         name,
         type,
-        dateTime: moment(match[1], ["HH:mm", "YYYY-MM-DD HH:mm"])
+        dateTime,
+        dateTimeFormat
       }
     }
   })
   .filter(function(n){ return n !== undefined })
   
   recipientName = recipientNames.length > 1 ? "Group" : recipientNames[0]
-  messages = messages.map(function(msg, i, arr) { 
+  messages = messages.reduce(function(acc, msg, i, arr) { 
     if (recipientName !== "Group") { delete msg.name }
     
-    
-    return Object.assign(smartTimestamp(msg, i, arr), msg)
-  })
+    return acc.concat(Object.assign(msg, smartTimestamp(msg, i, acc)))
+  }, [])
   
   return [messages, recipientName]
 }
