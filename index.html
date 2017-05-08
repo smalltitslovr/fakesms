@@ -33,6 +33,24 @@
 				<textarea id="message-content"></textarea>
 				<!--<button id="generate-images">Generate Images</button>
 				<span id="imgur-album-output"></span>-->
+				<div class="docs">
+					<h4>Usage:</h4>
+					<p>
+						Message format: <b>[2017-05-08 14:00] John: Hello world!</b>
+					</p>
+					<p>
+						The timestamp is optional. If you include it, the date is optional. The date must be in the YYYY-MM-DD format, and the time must be in military time. 
+					</p>
+					<p>
+						In the body (after the colon), you can put any of the following:
+					</p>
+					<p>
+						<b>{http://imgur.com/abcd.jpg}</b> - Image link. Must end in .jpg, .png, etc
+					</p>
+					<p>
+						<b>:laughing:</b> - Emoji. The list of supported emojis can be found <a href="https://afeld.github.io/emoji-css/">here.</a>
+					</p>
+				</div>
 			</div>
 			<div id="phone-container" class="container col-sm-6">
 				<h1>Preview</h1>
