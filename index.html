@@ -29,6 +29,9 @@
 				<input id="message-sender" type="text"></input>
 				<span>(Recipient is inferred from messages)</span>
 				<br />
+				<label for="relative-date">Relative Datetime: </label>
+				<input id="relative-date" type="text"></input>
+	                        <br />
 				<label for="message-content">Messages: </label>
 				<textarea id="message-content"></textarea>
 				<!--<button id="generate-images">Generate Images</button>
@@ -41,6 +44,10 @@
 					<p>
 						The timestamp is optional. If you include it, you must include the time in <b>military format (24hr)</b>. The date 
 						is optional, but if you include it, it must be in the format <b>YYYY-MM-DD</b>
+					</p>
+					<p>
+						The <b>Relative Datetime</b> field is used to set the datetime that the timestamps will be shown relative to. By 
+						default, it is the current time.
 					</p>
 					<p>
 						Group chats are also supported. Simply add more than three people into the message text.
