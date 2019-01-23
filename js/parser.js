@@ -19,7 +19,7 @@ function parseTime(timeString) {
 }
 
 function dateToTimestampParts(date, day=true, time=true) {
-  var relativeDateTimeString = $("#message-content").val()
+  var relativeDateTimeString = $("#relative-date").val()
   var relativeDateTime;
   if (relativeDateTimeString == '') { 
       relativeDateTime = moment()
