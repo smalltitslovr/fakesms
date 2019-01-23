@@ -19,8 +19,15 @@ function parseTime(timeString) {
 }
 
 function dateToTimestampParts(date, day=true, time=true) {
+  var relativeDateTimeString = $("#message-content").val()
+  var relativeDateTime;
+  if (relativeDateTimeString == '') { 
+      relativeDateTime = moment()
+  } else {
+      relativeDateTime = moment(relativeDateTimeString)
+  }
   return {
-    day: date.calendar(null, {
+    day: date.calendar(relativeDateTime, {
       sameDay: '[Today]',
       nextDay: '[Tomorrow]',
       nextWeek: 'dddd',
